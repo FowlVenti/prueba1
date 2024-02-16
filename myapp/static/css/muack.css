@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hachi maru pop';
+}
+body{
+    background-color: rgb(240, 59, 183);
+    color: rgb(46, 227, 255);
+}
+
+.navbar{
+    background-color: rgb(0, 0, 0);
+    padding: 24px;
+    border-radius: 45px;
+    
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    text-decoration: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(63, 255, 220);
+    padding: 24px 74px;
+
+    border-radius: 45px;
+}
+.navbar ul li a:hover{
+    background-color: rgb(63, 255, 220);
+    color: rgb(0, 0, 0);
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card{
+    background-color: whitesmoke;
+    padding: 20px;
+    margin-bottom: 5px;
+    
+}
+    
+
+.card a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+    
+.text{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 30px;
+    display: block;
+}

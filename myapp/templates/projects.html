@@ -1,0 +1,17 @@
+{% extends 'layouts/bsae.html.' %}
+{% block content%}
+
+<h1>Projects</h1>
+
+
+{% for project in projects %}
+ 
+<div class="card">
+    <a href="{% url 'details' project.id%}">
+<h3>{{project.name}}</h3>
+    </a>
+</div>
+
+{% endfor %}
+
+{% endblock %}

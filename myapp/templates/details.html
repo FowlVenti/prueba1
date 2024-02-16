@@ -1,0 +1,16 @@
+{% extends 'layouts/bsae.html.' %}
+{% block content%}
+
+<h1>{{ projectx }}</h1>
+
+{% for i in tasks %}
+
+
+<div class="card">
+    <a href="">
+{{i.titulo}}
+    </a>
+</div>
+{% endfor %}
+
+{% endblock %}

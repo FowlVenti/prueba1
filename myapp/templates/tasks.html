@@ -1,0 +1,40 @@
+{% extends 'layouts/bsae.html.' %}
+{% block content%}
+
+<h1>Tasks</h1>
+{% for i in tasks %}
+<div>
+    <h2>{% if i.done == False %}
+
+        ⌚
+
+        {% else %}
+
+        ✅
+
+        {% endif %}
+
+        {{i.titulo}}</h2>
+
+    {% if i.done == False %}
+    <h3>Tarea pendiente</h3>
+
+    {% else %}
+
+    <h3>Tarea realizada</h3>
+
+    {% endif %}
+
+
+
+    <h4>{{i.descripcion}}</h4>
+    <h4>Proyecto: {{i.project.name}}</h4>
+    <button>borrar</button>
+    <button>
+        ✅Done
+    </button>
+</div>
+
+{% endfor %}
+
+{% endblock %}
